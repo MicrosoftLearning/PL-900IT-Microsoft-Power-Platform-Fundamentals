@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 4: Come creare un'app basata su modello'
+    title: 'Lab 4: Come creare un’app basata su modello'
     module: 'Modulo 3: Introduzione a Power Apps'
 ---
 
@@ -140,7 +140,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 14.  Aggiungere i campi **Actual Start** e **Actual End** alla visualizzazione. 
 
-    > **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
+> **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
 
 15.  Fare clic sulla **freccia in giù** accanto al pulsante Salva facendo attenzione a non fare clic sul pulsante e selezionare **Salva con nome**.
 

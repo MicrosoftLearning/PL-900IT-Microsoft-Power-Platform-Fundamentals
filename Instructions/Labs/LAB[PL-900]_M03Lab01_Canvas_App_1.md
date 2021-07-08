@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 2: Come creare un'app canvas, parte 1'
+    title: 'Lab 2: Come creare un’app canvas, parte 1'
     module: 'Modulo 3: Introduzione a Power Apps'
 ---
 
@@ -180,7 +180,7 @@ In questa attività si configurerà la raccolta pregenerata per visualizzare il 
 
 5.  Nell'anteprima dell'app selezionare il prima campo di data/ora nella raccolta.
 
-6.  Nella barra della formula in alto, sostituire **ThisItem.'Created On'**con `ThisItem.'Scheduled Start'`
+6.  Nella barra della formula in alto, sostituire **ThisItem.'Created On'** con `ThisItem.'Scheduled Start'`
 
 7.  Selezionare di nuovo il campo
 
