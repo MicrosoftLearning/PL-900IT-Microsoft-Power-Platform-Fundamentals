@@ -1,16 +1,14 @@
----
+﻿---
 lab:
-    title: 'Lab 6: Come creare una soluzione automatizzata'
-    module: 'Modulo 4: Introduzione a Power Automate'
+    title: 'Lab 6. Come creare una soluzione automatizzata'
+    module: 'Modulo 4. Introduzione a Power Automate'
 ---
 
-# Modulo 4: Introduzione a Power Automate
+# Modulo 4. Introduzione a Power Automate
 ## Lab: Come creare una soluzione automatizzata
 
 ### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, l'entità è ora denominata tabella. I campi e i record nei database Dataverse sono ora definiti colonne e righe.
-
-Finché non verrà completato l'aggiornamento dell'esperienza utente delle applicazioni, alcuni riferimenti alla terminologia per Microsoft Dataverse come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto. 
+Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.
 
 Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -61,11 +59,11 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 2.  Fare clic su **Nuovo** e selezionare **Flusso cloud**. L'editor di flussi Power Automate verrà aperto in una nuova finestra.
 
-3. Cercare *corrente* e selezionare il connettore **Common Data Service (ambiente corrente)**.
+3. Selezionare **Microsoft Dataverse**.
 
-4. Selezionare il trigger **Quando un record viene creato, aggiornato o eliminato**.
+4. Selezionare il trigger **Quando una riga viene aggiunta, modificata o eliminata**.
 
-   * Selezionare **Crea** per **Trigger condition** (Condizione trigger)
+   * Selezionare **Crea** per **Tipo di modifica**
    
    * Selezionare **Visit** per **Nome tabella**.
    
@@ -73,9 +71,9 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
    
    * Nel passaggio del trigger fare clic sui puntini di sospensione (**...**) e fare clic su **Rinomina**. Rinominare il trigger **"When a visit is created"**. Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
-5.  Fare clic su **Nuovo passaggio**. Questo passaggio è necessario per recuperare le informazioni sui visitatori, incluso l'indirizzo e-mail.
+5. Selezionare **Nuovo passaggio**. Questo passaggio è necessario per recuperare le informazioni sui visitatori, incluso l'indirizzo e-mail.
 
-6. Cercare *corrente* e selezionare il connettore **Common Data Service (ambiente corrente)**.
+6. Selezionare **Microsoft Dataverse**.
 
 7. Selezionare l'azione **Recupera una riga tramite ID**. 
 
@@ -118,7 +116,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
     Lasciare questa scheda del flusso aperta per la prossima attività. Il flusso dovrebbe essere simile al seguente:
 
-![Flusso di notifica di Power Automate per i visitatori](media/4-power-automate-notification.png)
+![immagine](https://user-images.githubusercontent.com/78555251/118340724-ccb13300-b4d9-11eb-96c2-c7b005bb9ac0.png)
 
 ## Attività 2. Convalidare e testare il flusso
 
@@ -174,7 +172,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 4. Impostare **Intervallo** su **15 minuti**
 
-5. Fare clic su **Nuovo passaggio**. Cercare *corrente* e selezionare il connettore **Common Data Service (ambiente corrente)**. Selezionare l'azione **Elenca righe**.
+5. Fare clic su **Nuovo passaggio**. Cercare *corrente* e selezionare il connettore **Microsoft Dataverse**. Selezionare l'azione **Elenca righe**.
 
    * Immettere **Visit** per **Nome tabella**.
    
@@ -202,7 +200,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
     * Fare clic su **Aggiungi un'azione** all'interno del ciclo Applica a ogni.
     
-    * Cercare *corrente* e selezionare il connettore **Common Data Service (ambiente corrente)**. 
+    * Selezionare **Microsoft Dataverse**. 
     
     * Selezionare l'azione **Recupera una riga tramite ID**.
     
@@ -210,21 +208,21 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
     
     * Selezionare **Building (Valore)** come **ID riga** dal contenuto dinamico
     
-    * Fare clic su **...** accanto a **Recupera un record** e selezionare **Rinomina**. Immettere **Get building** come nome del passaggio
+    * Fare clic su **[...]** accanto a **Recupera una riga tramite ID** e selezionare **Rinomina**. Immettere **Get building** come nome del passaggio
     
 9.  Recuperare i dati sul visitatore per il record correlato
 
     * Fare clic su **Aggiungi un'azione** all'interno del ciclo Applica a ogni.
     
-    * Cercare *corrente* e selezionare il connettore **Common Data Service (ambiente corrente)**.
+    * Selezionare **Microsoft Dataverse**.
     
     * Selezionare l'azione **Recupera una riga tramite ID**.
     
-    * Selezionare **Contacts** come **Nome entità**
+    * Selezionare **Contatti** per **Nome tabella**.
     
-    * Selezionare **Visitor (valore)** come **ID elemento** dal contenuto dinamico
+    * Selezionare **Visitor (valore)** come **ID riga** dal contenuto dinamico
     
-    * Fare clic su **...** accanto a **Recupera una riga tramite ID** e selezionare **Rinomina**. Immettere **Get Visitor** come nome del passaggio
+    * Fare clic su **[...]** accanto a **Recupera una riga tramite ID** e selezionare **Rinomina**. Immettere **Get Visitor** come nome del passaggio
     
 11.  Inviare una notifica tramite e-mail
 
