@@ -1,16 +1,14 @@
 ---
 lab:
-    title: 'Lab 1: Modellazione dei dati'
-    module: 'Modulo 2: Introduzione a Microsoft Dataverse'
+    title: 'Lab 1. Modellazione dei dati'
+    module: 'Modulo 2. Introduzione a Microsoft Dataverse'
 ---
 
-# Modulo 2: Introduzione a Microsoft Dataverse
+# Modulo 2. Introduzione a Microsoft Dataverse
 ## Lab: Modellazione dei dati
 
 ### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, l'entità è ora denominata tabella. I campi e i record nei database Dataverse sono ora definiti colonne e righe.
-
-Finché non verrà completato l'aggiornamento dell'esperienza utente delle applicazioni, alcuni riferimenti alla terminologia per Microsoft Dataverse come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab.
+Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.
 
 Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -24,9 +22,9 @@ Durante questo corso verranno sviluppate applicazioni e si useranno le funzional
 
 In questo lab si accederà all'ambiente predisposto in precedenza e verranno creati un database Microsoft Dataverse e una soluzione per tenere traccia delle modifiche. Verrà anche creato un modello di dati a supporto dei requisiti seguenti:
 
--   R1 - Tenere traccia delle posizioni (edifici) delle visite al campus
--   R2 - Registrare informazioni di base per identificare i visitatori e tenerne traccia 
--   R3 - Pianificare, registrare e gestire le visite 
+-   R1. Tenere traccia delle posizioni (edifici) delle visite al campus
+-   R2. Registrare informazioni di base per identificare i visitatori e tenerne traccia 
+-   R3. Pianificare, registrare e gestire le visite 
 
 Verranno infine importati dati di esempio in Microsoft Dataverse.
 
@@ -35,7 +33,7 @@ Verranno infine importati dati di esempio in Microsoft Dataverse.
 Per preparare gli ambienti di apprendimento:
 
 * Verranno creati una soluzione e un autore
-* Verranno aggiunti i componenti nuovi ed esistenti necessari per soddisfare i requisiti dell'applicazione. Fare riferimento al [documento del modello di dati](https://raw.githubusercontent.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/update-march-2021/Allfiles/Campus%20Management.png) per una descrizione dei metadati, ovvero tabelle e relazioni. È possibile tenere premuto CTRL e fare clic o clic con il pulsante destro del mouse sul collegamento per aprire il documento del modello di dati in una nuova finestra.
+* Verranno aggiunti i componenti nuovi ed esistenti necessari per soddisfare i requisiti dell'applicazione. Fare riferimento al [documento del modello di dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) per una descrizione dei metadati, ovvero tabelle e relazioni. È possibile tenere premuto CTRL e fare clic o clic con il pulsante destro del mouse sul collegamento per aprire il documento del modello di dati in una nuova finestra.
 
 La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
 
@@ -67,7 +65,7 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
 
     -   Selezionare **Soluzioni** dal menu a sinistra e fare clic su **Nuova soluzione**.
 
-    -   Immettere **(cognome) Campus Management** in **Nome visualizzato**.
+    -   Immettere **[cognome] Campus Management** in **Nome visualizzato**.
 
 2.  Creare l'editore
 
@@ -274,11 +272,11 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 In questa attività si importerà una soluzione che contiene il flusso di Power Automate necessario per completare l'importazione dei dati.
 
-1. È necessario avere a disposizione il file **DataImport_managed.zip** archiviato nel desktop. Scaricare la [soluzione di importazione dei dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/update-march-2021/Allfiles/DataImport_managed.zip?raw=true) in caso contrario.
+1. È necessario avere a disposizione il file **DataImport_managed.zip** archiviato nel desktop. Scaricare la [soluzione di importazione dei dati](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip?raw=true) in caso contrario.
 
 2. Accedere a <https://make.powerapps.com>.
 
-3. Selezionare l'ambiente **(iniziali) Practice** in alto a destra, se non è già selezionato.
+3. Selezionare l'ambiente **[iniziali] Practice** in alto a destra, se non è già selezionato.
 
 4. Selezionare **Soluzioni** nel riquadro di spostamento a sinistra.
 
@@ -312,7 +310,7 @@ In questa attività si importerà una soluzione che contiene il flusso di Power 
 
 2. Controllare lo **Stato** del flusso **Import Data**.
 
-3. Se lo **Stato** è **Disattivato** selezionare **...** accanto a **Import Data** e quindi selezionare **Attiva**.
+3. Se lo **Stato** è **Disattivato** selezionare **[...]** accanto a **Import Data** e quindi selezionare **Attiva**.
 
    > **Importante:** se viene visualizzato un messaggio di errore, verificare che le tabelle e le colonne create corrispondano alle istruzioni sopra indicate.
 

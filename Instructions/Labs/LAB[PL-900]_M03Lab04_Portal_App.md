@@ -1,17 +1,15 @@
 ---
 lab:
-    title: 'Lab 5: Come creare un portale Power Apps'
-    module: 'Modulo 3: Introduzione a Power Apps'
+    title: 'Lab 5. Come creare un portale Power Apps'
+    module: 'Modulo 3. Introduzione a Power Apps'
 ---
 
-# Modulo 3: Introduzione a Power Apps
+# Modulo 3. Introduzione a Power Apps
 
 ## Lab 4. Come creare un portale Power Apps
 
 ### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, l'entità è ora denominata tabella. I campi e i record nei database Dataverse sono ora definiti colonne e righe.
-
-Finché non verrà completato l'aggiornamento dell'esperienza utente delle applicazioni, alcuni riferimenti alla terminologia per Microsoft Dataverse come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto. 
+Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto. 
 
 Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 

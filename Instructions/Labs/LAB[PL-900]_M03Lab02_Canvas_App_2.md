@@ -1,16 +1,14 @@
 ---
 lab:
-    title: 'Lab 3: Come creare un’app canvas, parte 2'
-    module: 'Modulo 3: Introduzione a Power Apps'
+    title: 'Lab 3. Come creare un’app canvas, parte 2'
+    module: 'Modulo 3. Introduzione a Power Apps'
 ---
 
-# Modulo 3: Introduzione a Power Apps
+# Modulo 3. Introduzione a Power Apps
 ## Lab 2. Come creare un'app canvas, parte 2
 
 ### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, l'entità è ora denominata tabella. I campi e i record nei database Dataverse sono ora definiti colonne e righe.
-
-Finché non verrà completato l'aggiornamento dell'esperienza utente delle applicazioni, alcuni riferimenti alla terminologia per Microsoft Dataverse come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.  
+Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.
 
 Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -85,7 +83,7 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
     
     -   Fare clic su **+ Aggiungi dati**.
 
-    -   Fare clic su **Visualizza tutte le tabelle**.
+    -   Fare clic su **Visualizza tutte le tabelle**
     
     -   Selezionare **Visit** e attendere che la tabella Visit venga visualizzata nella scheda Dati.
     
@@ -109,7 +107,7 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
     
     -   Selezionare la proprietà **Testo suggerimento** e immettere `"Enter visitor code"` come valore, incluse le virgolette doppie.
     
-    -   Fare clic su **...** accanto al nome del controllo nella visualizzazione struttura ad albero (TextInput1), selezionare **Rinomina** e cambiare il nome in `textCode`.
+    -   Fare clic su **[...]** accanto al nome del controllo nella visualizzazione struttura ad albero (TextInput1), selezionare **Rinomina** e cambiare il nome in `textCode`.
     
 3.  Aggiungere una visualizzazione modulo
 
@@ -135,7 +133,7 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
    
     -   Fare clic sulla **X** per chiudere il riquadro Campi
    
-5.  Con la visualizzazione modulo ancora selezionata, selezionare la scheda Avanzate nel riquadro delle proprietà. Selezionare la proprietà **Item** e immettere `LookUp(Visit; Code = textCode.Text)` 
+5.  Con la visualizzazione modulo ancora selezionata, selezionare la scheda Avanzate nel riquadro delle proprietà. Selezionare la proprietà **Item** e immettere `LookUp(Visits, Code = textCode.Text)` 
 
 6.  Per conservare il lavoro in corso, fare clic su **File** e quindi su **Salva**. Usare la freccia indietro per tornare all'app.
 
@@ -175,7 +173,7 @@ In questa attività verranno creati i pulsanti per consentire agli utenti di ese
    
     * Nel riquadro delle proprietà selezionare la scheda **Avanzate** e quindi selezionare la proprietà **OnChange**
    
-    * Immettere l'espressione seguente `Set(Visit; LookUp(Visit; Code = textCode.Text))`
+    * Immettere l'espressione seguente `Set(Visit, LookUp(Visits, Code = textCode.Text))`
     
     > La visita verrà così salvata in una variabile globale quando l'utente esegue una ricerca nella casella di ricerca textCode. In questo modo sarà possibile usare la variabile *Visit* in tutta l'app senza dover immettere di nuovo l'intera espressione di ricerca.
 
@@ -187,7 +185,7 @@ In questa attività verranno creati i pulsanti per consentire agli utenti di ese
    
    * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su "`Check In`" (è possibile digitare all'interno delle virgolette esistenti)
    
-   * Fare clic su **...** accanto al nome del pulsante nella visualizzazione struttura ad albero (Button1), selezionare **Rinomina** e cambiare il nome in `CheckInButton`
+   * Fare clic su **[...]** accanto al nome del pulsante nella visualizzazione struttura ad albero (Button1), selezionare **Rinomina** e cambiare il nome in `CheckInButton`
 
 3. Aggiungere il pulsante per il check-out   
 
@@ -220,7 +218,7 @@ Quando gli utenti trovano la visita tramite la casella di ricerca, vogliamo che 
 
    * **!IsBlank(Visit)** - Il record della visita è stato trovato
    * **&&** - Operatore AND logico
-   * **Visit.Status = 'Status (Visit)'.Active** - Lo stato del record è *Active*
+   * **Visit.Status = 'Status (Visits)'.Active** - Lo stato del record è *Active*
    * **IsBlank(Visit.'Actual Start')** - Il campo Active Start non contiene dati
    * **DisplayMode.Edit, DisplayMode.Disabled** - Se le condizioni precedenti risultano soddisfatte, il pulsante diventa modificabile. In caso contrario, il pulsante rimarrà disabilitato.
 

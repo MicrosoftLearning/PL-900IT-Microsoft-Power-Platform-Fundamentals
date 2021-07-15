@@ -1,17 +1,15 @@
 ---
 lab:
-    title: 'Lab 2: Come creare un’app canvas, parte 1'
-    module: 'Modulo 3: Introduzione a Power Apps'
+    title: 'Lab 2. Come creare un’app canvas, parte 1'
+    module: 'Modulo 3. Introduzione a Power Apps'
 ---
 
-# Modulo 3: Introduzione a Power Apps
+# Modulo 3. Introduzione a Power Apps
 
 ## Lab: Come creare un'app canvas, parte 1
 
 ### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, l'entità è ora denominata tabella. I campi e i record nei database Dataverse sono ora definiti colonne e righe.
-
-Finché non verrà completato l'aggiornamento dell'esperienza utente delle applicazioni, alcuni riferimenti alla terminologia per Microsoft Dataverse come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab.
+Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.
 
 Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -67,13 +65,9 @@ In questa attività verrà creata un'app canvas con il modello di layout per il 
 
     -   Fare clic su **Nuova app** e selezionare **Canvas**.
 
-    -   Selezionare **Layout del telefono** in **Common Data Service**.
+    -   Selezionare **Layout del telefono** in **Microsoft Dataverse (legacy)**.
 
-3.  Selezionare **Crea** sotto la connessione **Common Data Service**
-
-4.  Selezionare la tabella **Visit**
-
-5.  Fare clic su **Connetti**
+4.  Selezionare la tabella **Visit**. Fare clic su **Connetti**.
 
 6.  Potrebbe essere visualizzata la finestra **Benvenuto in Power Apps Studio**. Fare clic su **Ignora**.
 
@@ -212,7 +206,7 @@ Considerato il numero di visite in continua crescita, gli utenti hanno bisogno d
 
 8. Trovare la proprietà **Items** e fare clic nella casella di testo.
 
-9. Trovare **[@Visit]** nell'espressione e sostituire con `Filter(Visit;'Scheduled End' >= DatePicker1.SelectedDate)`. L'espressione completa sarà simile alla seguente:
+9. Trovare **[@Visits]** nell'espressione e sostituire con `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. L'espressione completa sarà simile alla seguente:
 
    ```
    SortByColumns(
