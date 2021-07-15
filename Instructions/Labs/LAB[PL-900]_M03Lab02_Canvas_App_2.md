@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab 3. Come creare un’app canvas, parte 2'
     module: 'Modulo 3. Introduzione a Power Apps'
