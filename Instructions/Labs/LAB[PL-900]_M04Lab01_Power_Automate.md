@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab 6. Come creare una soluzione automatizzata'
     module: 'Modulo 4. Introduzione a Power Automate'
