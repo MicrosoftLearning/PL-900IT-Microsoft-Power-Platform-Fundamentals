@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab. Convalidare l'ambiente lab'
     module: 'Modulo 0. Introduzione al corso'
