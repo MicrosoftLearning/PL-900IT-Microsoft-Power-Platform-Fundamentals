@@ -173,7 +173,7 @@ In questa attività verranno creati i pulsanti per consentire agli utenti di ese
    
     * Nel riquadro delle proprietà selezionare la scheda **Avanzate** e quindi selezionare la proprietà **OnChange**
    
-    * Immettere l'espressione seguente 'Set(Visit; LookUp(Visit; Code = textCode.Text))'
+    * Immettere l'espressione seguente `Set(Visit, LookUp(Visits, Code = textCode.Text))`
     
     > La visita verrà così salvata in una variabile globale quando l'utente esegue una ricerca nella casella di ricerca textCode. In questo modo sarà possibile usare la variabile *Visit* in tutta l'app senza dover immettere di nuovo l'intera espressione di ricerca.
 
@@ -183,17 +183,17 @@ In questa attività verranno creati i pulsanti per consentire agli utenti di ese
    
    * Fare clic su **Pulsante**
    
-   * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su "Check In" (è possibile digitare all'interno delle virgolette esistenti)
+   * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su "`Check In`" (è possibile digitare all'interno delle virgolette esistenti)
    
-   * Fare clic su **[...]** accanto al nome del pulsante nella visualizzazione struttura ad albero (Button1), selezionare **Rinomina** e cambiare il nome in 'CheckInButton'
+   * Fare clic su **[...]** accanto al nome del pulsante nella visualizzazione struttura ad albero (Button1), selezionare **Rinomina** e cambiare il nome in `CheckInButton`
 
 3. Aggiungere il pulsante per il check-out   
 
    * Fare clic su **Pulsante** nella scheda Inserisci per inserire un altro pulsante
    
-   * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su "Check Out" (è possibile digitare all'interno delle virgolette esistenti)
+   * Nel riquadro delle proprietà impostare la proprietà **Testo** del pulsante su "`Check Out`" (è possibile digitare all'interno delle virgolette esistenti)
    
-   * Rinominare il pulsante 'CheckOutButton'
+   * Rinominare il pulsante `CheckOutButton`
    
    * Posizionare i pulsanti sotto la casella di ricerca, con **Check In** sopra **Check Out** 
    
@@ -218,7 +218,7 @@ Quando gli utenti trovano la visita tramite la casella di ricerca, vogliamo che 
 
    * **!IsBlank(Visit)** - Il record della visita è stato trovato
    * **&&** - Operatore AND logico
-   * **Visit.Status = 'Status (Visit)'.Active** - Lo stato del record è *Active*
+   * **Visit.Status = 'Status (Visits)'.Active** - Lo stato del record è *Active*
    * **IsBlank(Visit.'Actual Start')** - Il campo Active Start non contiene dati
    * **DisplayMode.Edit, DisplayMode.Disabled** - Se le condizioni precedenti risultano soddisfatte, il pulsante diventa modificabile. In caso contrario, il pulsante rimarrà disabilitato.
 
@@ -272,7 +272,7 @@ Per eseguire il processo di check-in e check-out, è necessario aggiornare i dat
    L'espressione è composta dalle parti seguenti:
 
    * **Patch(Visits, Visit, {'Actual Start': Now()});**. Il metodo *Patch* aggiorna la tabella **Visit**, la riga identificata dalla variabile **Visit**, ovvero la visita corrente. L'espressione imposta il valore della colonna *Actual Start* sulla data e l'ora correnti (metodo *Now()*).
-   * **Refresh([@Visit]);**. Questa espressione aggiorna le righe delle visite, dato che i valori sottostanti sono cambiati
+   * **Refresh([@Visits]);**. Questa espressione aggiorna le righe delle visite, dato che i valori sottostanti sono cambiati
    * **Set(Visit, LookUp(Visits, Code = textCode.Text));** Questa espressione aggiorna la variabile *Visit* con i dati aggiornati da Dataverse.
    
    > Quando un utente fa clic su questo pulsante, il valore Actual Start della visita verrà impostato sulla data e l'ora correnti e i dati verranno aggiornati.

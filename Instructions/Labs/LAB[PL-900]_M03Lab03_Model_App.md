@@ -138,7 +138,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 14.  Aggiungere i campi **Actual Start** e **Actual End** alla visualizzazione. 
 
-    > **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
+> **Nota:** dato che i dati non sono più filtrati in base allo stato, otterremo un elenco delle visite del giorno che include anche quelle completate. Questi campi serviranno a distinguere le visite completate da quelle in corso.
 
 15.  Fare clic sulla **freccia in giù** accanto al pulsante Salva facendo attenzione a non fare clic sul pulsante e selezionare **Salva con nome**.
 
@@ -235,7 +235,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
 12.  Fare clic su **Convalida** per convalidare le modifiche apportate nell'applicazione. 
 
-    >  Verranno visualizzati alcuni avvisi che possono essere ignorati perché non abbiamo aggiunto un riferimento a una visualizzazione e a un modulo specifici per le entità e gli utenti avranno accesso a tutti i moduli e le visualizzazioni per le entità **Visit** e **Building**.
+>  Verranno visualizzati alcuni avvisi che possono essere ignorati perché non abbiamo aggiunto un riferimento a una visualizzazione e a un modulo specifici per le entità e gli utenti avranno accesso a tutti i moduli e le visualizzazioni per le entità **Visit** e **Building**.
      
 13. Fare clic su **Pubblica**.
 

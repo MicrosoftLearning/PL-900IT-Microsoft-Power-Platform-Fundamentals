@@ -224,19 +224,19 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
     
     * Fare clic su **[...]** accanto a **Recupera una riga tramite ID** e selezionare **Rinomina**. Immettere **Get Visitor** come nome del passaggio
     
-11.  Inviare una notifica tramite e-mail
+10.  Inviare una notifica tramite e-mail
 
      * Fare clic su **Aggiungi un'azione** all'interno del ciclo Applica a ogni. Aggiungere l'azione **Invia una notifica di posta elettronica** dal connettore **Posta**.
 
-12.  Immettere l'indirizzo e-mail personale in **A**
+11.  Immettere l'indirizzo e-mail personale in **A**
 
-13.  Immettere il testo seguente nel campo **Oggetto**. **Full Name** indica il contenuto dinamico recuperato dal passaggio **Get visitor**.
+12.  Immettere il testo seguente nel campo **Oggetto**. **Full Name** indica il contenuto dinamico recuperato dal passaggio **Get visitor**.
 
    ```
    {Full Name} overstayed their welcome
    ```
    
-14.  Immettere il testo seguente nel campo **Corpo**. **Name** indica il contenuto dinamico recuperato dal passaggio **Get building**.
+13.  Immettere il testo seguente nel campo **Corpo**. **Name** indica il contenuto dinamico recuperato dal passaggio **Get building**.
 
    ```
    There is an overstay in building {Name}.
@@ -246,9 +246,9 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
    Campus Security
    ```
 
-17.  Selezionare il nome di flusso **Senza titolo** nell'angolo in alto a sinistra e rinominarlo **Security Sweep**
+14.  Selezionare il nome di flusso **Senza titolo** nell'angolo in alto a sinistra e rinominarlo **Security Sweep**
 
-18.  Fare clic su **Salva**
+15.  Fare clic su **Salva**
 
     Il flusso dovrebbe essere simile al seguente:
 
