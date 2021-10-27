@@ -77,6 +77,8 @@ In questa attività verrà creata un'app canvas con il modello di layout per il 
 
     -   Fare clic su **File \> Salva**.
 
+    -   Immettere [cognome] Campus Staff come **Nome app**.
+
     -   Fare clic su **Salva**.
 
 ## Attività 2. Configurare il modulo dei dettagli delle visite
