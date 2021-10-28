@@ -71,7 +71,9 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
 
     -   Fare clic sull'elenco a discesa **Editore** e selezionare **+ Nuovo editore**
 
-    -   Nella finestra visualizzata immettere **Bellows College** in **Nome visualizzato** 
+    -   Nella finestra visualizzata immettere **Bellows College** in **Nome visualizzato**. 
+
+    -   Immettere **BellowsCollege** per **Nome**.
     
     -   Immettere **bc** in **Prefisso**
 
@@ -115,10 +117,10 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
 
     > Dovrebbero essere selezionati **1 visualizzazione** e **1 modulo**. 
     
-10.  Fare di nuovo clic su **Aggiungi**. La tabella Contatto con la visualizzazione e il modulo selezionati verranno così aggiunti alla nuova soluzione creata. 
-    
-    > La soluzione dovrebbe contenere ora una sola tabella: Contatto.
+10.  Fare di nuovo clic su **Aggiungi**. La tabella Contatto con la visualizzazione e il modulo selezionati verranno così aggiunti alla nuova soluzione creata.
 
+> La soluzione dovrebbe contenere ora una sola tabella: Contatto.
+    
 ## Attività 2. Creare la tabella Building
 
 1.  Il browser dovrebbe essere ancora aperto nella soluzione Campus Management. In caso contrario, seguire questa procedura per aprire la soluzione Campus Management:
@@ -134,7 +136,7 @@ La soluzione includerà varie tabelle al termine di tutte le personalizzazioni:
     
     -   Immettere **Building** in **Nome visualizzato**. 
     
-    -   Fare clic su **Crea**. Verrà avviato il provisioning della tabella in background e sarà possibile aggiungere altre tabelle e colonne nel frattempo.
+    -   Fare clic su **Salva**. Verrà avviato il provisioning della tabella in background e sarà possibile aggiungere altre tabelle e colonne nel frattempo.
 
 ## Attività 3. Creare la tabella Visit e le colonne
 
@@ -144,7 +146,12 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
 
 > Usiamo il comportamento **Indipendente dal fuso orario** per registrare le informazioni di data e ora, perché l'ora di una visita è sempre locale rispetto alla posizione dell'edificio e non deve cambiare se visualizzata da un fuso orario diverso. 
 
-1.  Selezionare la soluzione **Campus Management**
+1.  Il browser dovrebbe essere ancora aperto nella soluzione Campus Management. In caso contrario, seguire questa procedura per aprire la soluzione Campus Management:
+
+    * Accedere a <https://make.powerapps.com> (se l'accesso non è già stato eseguito).
+    
+    * Selezionare **Soluzioni** e fare clic per aprire la soluzione **[cognome] Campus Management**
+          appena creata.
 
 2. Creare la tabella Visit
 
@@ -152,9 +159,11 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
    
    * Immettere **Visit** in **Nome visualizzato**. 
    
-   * Fare clic su **Crea**. Verrà avviato il provisioning della tabella in background e sarà possibile iniziare ad aggiungere altre colonne.
+   * Fare clic su **Salva**. Verrà avviato il provisioning della tabella in background e sarà possibile iniziare ad aggiungere altre colonne.
 
 3. Creare la colonna Scheduled Start
+
+   * Selezionare la tabella **Visit**
 
    * Assicurarsi che sia selezionata la scheda **Colonne** e fare clic su **Aggiungi colonna**.
    
@@ -262,7 +271,9 @@ Vogliamo assegnare a ogni visita un numero univoco che possa essere immesso e in
     
 4.  Fare clic su **Salva tabella**.
 
-5.  Selezionare **Soluzioni** dal menu in alto e fare clic su **Pubblica tutte le personalizzazioni**.
+5.  Selezionare **Torna alla pagina delle soluzioni** in alto a sinistra.
+
+6.  Selezionare **Pubblica tutte le personalizzazioni**.
 
 # Esercizio 4. Importare dati
 
