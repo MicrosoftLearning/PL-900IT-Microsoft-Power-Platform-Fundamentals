@@ -298,7 +298,7 @@ In questa attività si importerà una soluzione che contiene il flusso di Power 
 >   Dipendenze mancanti. Installare le soluzioni seguenti prima di installare questa...
 >
 >   Questo messaggio indica che il modello di dati non completo, che il
->   prefisso dell'editore non è **bc** o che i nomi delle tabelle **Building** e **Visit**
+>   prefisso dell'editore non è **bc** o che i nomi delle tabelle **Building** e **Visits**
 >   sono diversi dai nomi indicati nelle procedure precedenti.
 
 6. Fare clic su **Avanti**. Verrà richiesto di ristabilire le connessioni. 
