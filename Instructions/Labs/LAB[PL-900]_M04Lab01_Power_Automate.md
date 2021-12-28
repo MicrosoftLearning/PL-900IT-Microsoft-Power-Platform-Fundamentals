@@ -7,11 +7,6 @@ lab:
 # Modulo 4. Introduzione a Power Automate
 ## Lab: Come creare una soluzione automatizzata
 
-### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.
-
-Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 ## Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. I visitatori del campus sono attualmente registrati su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
@@ -57,23 +52,23 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
     -   Fare clic per aprire la soluzione **Campus Management**.
 
-2.  Fare clic su **Nuovo** e selezionare **Flusso cloud**. L'editor di flussi Power Automate verrà aperto in una nuova finestra.
+2.  Fare clic su **Nuovo** e selezionare **Automazione**, **Flusso cloud** e **Automatizzato**. L'editor di flussi Power Automate verrà aperto in una nuova finestra.
 
-3. Selezionare **Microsoft Dataverse**.
+3. In **Scegliere il trigger del flusso** cercare **Microsoft Dataverse**.
 
-4. Selezionare il trigger **Quando una riga viene aggiunta, modificata o eliminata**.
+4. Selezionare il trigger **Quando una riga viene aggiunta, modificata o eliminata** e fare clic su **Crea**.
 
-   * Selezionare **Crea** per **Tipo di modifica**
+   * Selezionare **Aggiunta** per **Tipo di modifica**
    
    * Selezionare **Visit** per **Nome tabella**.
    
    * Selezionare **Organizzazione** per **Ambito**.
    
-   * Nel passaggio del trigger fare clic sui puntini di sospensione (**...**) e fare clic su **Rinomina**. Rinominare il trigger **"When a visit is created"**. Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
+   * Nel passaggio del trigger fare clic sui puntini di sospensione (**...**) e fare clic su **Rinomina**. Rinominare il trigger **"Quando viene creata una visita"**. Questa è una procedura consigliata, per consentire all'utente e agli altri editor del flusso di comprendere lo scopo del passaggio senza dover esaminare i dettagli.
 
 5. Selezionare **Nuovo passaggio**. Questo passaggio è necessario per recuperare le informazioni sui visitatori, incluso l'indirizzo e-mail.
 
-6. Selezionare **Microsoft Dataverse**.
+6. Cerca **Microsoft Dataverse**.
 
 7. Selezionare l'azione **Recupera una riga tramite ID**. 
 
@@ -85,7 +80,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
 8. Fare clic su **Nuovo passaggio**. Questo è il passaggio che creerà e invierà l'e-mail al visitatore.
 
-9. Cercare *posta*, selezionare il connettore **Posta** e selezionare l'azione **Invia una notifica di posta elettronica**. 
+9. Cercare *posta*, selezionare il connettore **Office 365 Outlook** e l'azione **Invia un messaggio di posta elettronica (v2)**.
 
    * Se viene richiesto di accettare i termini e le condizioni per usare questa azione, fare clic su **Accetta**.
    
@@ -166,11 +161,11 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
 
    -   Fare clic per aprire la soluzione **Campus Management**.
 
-2. Fare clic su **Nuovo** e selezionare **Flusso cloud**. L'editor di flussi Power Automate verrà aperto in una nuova finestra.
+2. Fare clic su **Nuovo** e selezionare **Automazione**, **Flusso cloud** e **Pianificato**. L'editor di flussi Power Automate verrà aperto in una nuova finestra.
 
-3. Cercare *ricorrenza*, selezionare il connettore **Pianifica** e quindi selezionare il trigger **Ricorrenza**.
+3. Impostare il flusso per la ripetizione ogni **15** minuti.
 
-4. Impostare **Intervallo** su **15 minuti**
+4. Fare clic su **Crea**.
 
 5. Fare clic su **Nuovo passaggio**. Cercare *corrente* e selezionare il connettore **Microsoft Dataverse**. Selezionare l'azione **Elenca righe**.
 
@@ -226,7 +221,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
     
 10.  Inviare una notifica tramite e-mail
 
-     * Fare clic su **Aggiungi un'azione** all'interno del ciclo Applica a ogni. Aggiungere l'azione **Invia una notifica di posta elettronica** dal connettore **Posta**.
+     * Fare clic su **Aggiungi un'azione** all'interno del ciclo Applica a ogni. Aggiungere l'azione **Invia un messaggio di posta elettronica (v2)** dalla connessione **Office 365 Outlook**.
 
 11.  Immettere l'indirizzo e-mail personale in **A**
 
@@ -236,7 +231,7 @@ Per completare il progetto sono stati identificati i requisiti seguenti:
    {Full Name} overstayed their welcome
    ```
    
-13.  Immettere il testo seguente nel campo **Corpo**. **Name** indica il contenuto dinamico recuperato dal passaggio **Get building**.
+13.  Immettere il testo seguente nel campo **Corpo**. **Name** indica il contenuto dinamico recuperato dal passaggio **Get building**. Potrebbe essere necessario scorrere alla fine dell'elenco.
 
    ```
    There is an overstay in building {Name}.

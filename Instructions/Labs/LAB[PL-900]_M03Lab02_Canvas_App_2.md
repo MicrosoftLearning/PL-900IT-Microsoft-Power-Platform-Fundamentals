@@ -7,11 +7,6 @@ lab:
 # Modulo 3. Introduzione a Power Apps
 ## Lab 2. Come creare un'app canvas, parte 2
 
-### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.
-
-Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
@@ -62,18 +57,22 @@ Verrà usata la sequenza seguente per progettare l'app canvas:
     
 2.  Creare una nuova applicazione canvas
 
-    -   Fare clic su **Nuovo** e selezionare **App \| App canvas \| Fattore di forma telefono**.
-        L'editor di app verrà aperto in una nuova finestra.
-        
-    -   Fare clic su **Ignora** se viene visualizzata la finestra di dialogo Benvenuto in Power Apps Studio.
+    -   Fare clic su **Nuovo** e selezionare **App \| App canvas**.
+
+    -   Dalla finestra vuota nell'app canvas, immettere **[Il proprio cognome] Campus Security** nel campo Nome app.
+
+    -   Selezionare **Telefono** nel campo Formato.
+
+    -   Fare clic su **Crea**.
+        L'editor di app verrà aperto in una nuova finestra. Fare clic su **Ignora** se viene visualizzata la finestra di dialogo Benvenuto in Power Apps Studio.
     
 3.  Salvare l'app canvas
 
     -   Fare clic su **File** e selezionare **Salva con nome**.
     
-    -   Verificare che sia selezionata l'opzione **Cloud**. 
-    
-    -   Immettere il nome **[cognome] Campus Security** e fare clic su **Salva**.
+    -   Verificare che sia selezionata l'opzione **Cloud** e fare clic su **Salva**.
+
+    -   Verificare il nome di **[Il proprio cognome] Campus Security** e fare clic su **Salva**.
         
     -   Fare clic sulla freccia **Indietro** in alto a sinistra, sotto a Power Apps, per tornare all'app.
 

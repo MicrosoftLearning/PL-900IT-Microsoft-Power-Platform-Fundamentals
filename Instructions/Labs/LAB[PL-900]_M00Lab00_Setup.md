@@ -7,13 +7,6 @@ lab:
 Modulo 0. Introduzione al corso
 =================================
 
-## Lab: Convalidare l'ambiente lab
-
-### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto. 
-
-Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 Scenario
 --------
 
@@ -27,7 +20,7 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 ## Esercizio 1. Configurazione
 
-### Attività 1. Acquisire il tenant di prova di Power Platform
+### Attività 1. Acquisire il tenant di prova di Microsoft Power Platform
 
 1. Copiare le **credenziali di Microsoft 365** dal provider di servizi di hosting per i lab autorizzato.
 
@@ -41,9 +34,11 @@ In questo lab del modulo 0 si acquisirà un tenant di prova di Power Platform e 
 
 6. Selezionare **Sì** per mantenere l'accesso.
 
+7. Completare le informazioni dell'account e selezionare **Attività iniziali** per registrarsi per la propria versione di valutazione di Microsoft Power Platform.  
+
 ### Attività 2. Creare l'ambiente
 
-1.  Passare a <https://admin.powerplatform.microsoft.com> e accedere con le credenziali di Microsoft 365 se richiesto di nuovo.
+1. Passare a <https://admin.powerplatform.microsoft.com> e accedere con le credenziali di Microsoft 365 se richiesto di nuovo.
 
 2. Selezionare **Ambienti** e fare clic su **+Nuovo**.
 

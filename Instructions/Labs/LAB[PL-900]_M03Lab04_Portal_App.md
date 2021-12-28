@@ -8,11 +8,6 @@ lab:
 
 ## Lab 4. Come creare un portale Power Apps
 
-### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto. 
-
-Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus.
@@ -74,7 +69,7 @@ Verrà usata la sequenza seguente per progettare il portale Power Apps:
 
     -   Dalla barra dei comandi selezionare **Nuova pagina**
 
-    -   Passare il mouse su **Layout fissi** e scegliere **Pagina con titolo**
+    -   Selezionare **Pagina di destinazione**
 
 3.  Nel riquadro delle proprietà, in **Visualizzazione** cambiare l'impostazione di **Nome** da **Nuova pagina (1)** a `Building Directory`
 
@@ -86,7 +81,7 @@ Verrà usata la sequenza seguente per progettare il portale Power Apps:
 
 1.  Aggiungere una sezione alla pagina Web
 
-    -   Nel canvas, ovvero l'area in cui è visualizzata la pagina Web, selezionare la sezione **Copia pagina**. Si tratta del riquadro grande attorno alle 2 frasi di testo nel centro della pagina.
+    -   Nel canvas, ovvero l'area in cui è visualizzata la pagina Web, selezionare una sezione della pagina che non sia una colonna.
 
     -   Nella barra degli strumenti (sul lato sinistro) selezionare l'icona **Componenti**
 
@@ -114,11 +109,35 @@ Verrà usata la sequenza seguente per progettare il portale Power Apps:
 
     -   Scegliere **Immagine** nell'area **Componenti del portale**
 
-    -   Nel riquadro delle proprietà fare clic su **Selezionare un'immagine**. Individuare e selezionare l'immagine **Product A.png**
+    -   Nel riquadro delle proprietà fare clic su **Selezionare un'immagine**. Individuare e selezionare **Pages.png**
     
     -   Nel riquadro delle proprietà fare clic sull'elenco a discesa della sezione **Formattazione** e impostare il valore di **Larghezza** su 70% (assicurarsi di digitare il simbolo %). Fare un po' di prove con il ridimensionamento dell'immagine fino a ottenere il risultato desiderato.
 
-4.  Fare clic su **Esplora sito Web** per visualizzare la pagina ottenuta finora.  Si noti che il menu principale include ora l'opzione **Building Directory**.
+4.  Configurare i diritti per visualizzare l'elenco degli edifici 
+
+    -   Dal menu a sinistra, fare clic su Impostazioni (simbolo dell'ingranaggio) e scegliere **Visualizza altre impostazioni**. Verranno aperte impostazioni aggiuntive in una nuova scheda.
+
+    -   Nel menu a sinistra, scorrere in basso fino a **Sicurezza** e selezionare **Autorizzazioni tabella**.
+
+    -   Fare clic su **Nuova** e aggiungere i valori seguenti:
+
+        -   **Name**: Mostra elenco edifici
+        -   **Nome tabella**: Dal menu a discesa sul lato destro selezionare Edificio (bc_building)
+        -   **Sito Web**: Fare clic sulla Lente di ingrandimento e selezionare il proprio sito Web (Bellows College Visitors – [il proprio nome])
+        -   **Tipo di accesso**: Globali
+        -   **Privilegi**: Lettura
+    
+    -   Dal menu in alto selezionare **Salva**.
+    
+    -   Scorrere in basso fino alla sezione **Ruoli Web** e **Aggiungi ruolo Web esistente**.
+    
+    -   Fare clic sulla lente di ingrandimento, selezionare **Utenti anonimi** e fare clic su **Aggiungi**.
+    
+    -   Dal menu in alto selezionare **Salva e chiudi**.
+    
+    -   Tornare alla scheda precedente.
+
+5.  Fare clic su **Esplora sito Web** per visualizzare la pagina ottenuta finora.  Si noti che il menu principale include ora l'opzione **Building Directory**.
 
     > Potrebbe essere necessario configurare il browser per consentire i popup.
 
@@ -184,7 +203,7 @@ Verrà usata la sequenza seguente per progettare il portale Power Apps:
 
     -   Nella barra degli strumenti (sul lato sinistro) selezionare l'icona **Temi**
     
-    -   Fare clic sull'interruttore **Abilita tema di base** per attivare questa funzionalità.
+    -   Assicurarsi che l'interruttore per **Abilita tema di base** sia impostato su Attivato.
     
     -   Per una delle impostazioni predefinite fare clic sui puntini di sospensione (**...**) e scegliere **Personalizza**.
     
