@@ -81,23 +81,23 @@ In questo esercizio verranno generati alcuni argomenti dal sito delle domande fr
 
 5.  Fare clic su **Attività iniziali**.
 
-6.  Incollare l'URL copiato nella casella di testo **Collegamento a contenuto online** e fare clic su **Aggiungi**.
+6.  Incollare l'URL copiato nella casella di testo **Collegamento a contenuto online** e fare clic su **Aggiungi**. Se è stato copiato l'URL completo, https:// verrà elencato due volte. Assicurarsi che l'URL elenchi il protocollo solo una volta.
 
 7.  Fare clic su **Inizia** e attendere. L'operazione potrebbe richiedere alcuni minuti.
 
 8.  Verranno creati alcuni argomenti suggeriti. Fare clic per aprire uno degli argomenti suggeriti.
 
-9. Verranno visualizzate la frase trigger e la risposta del bot. **Fare clic su Aggiungi ad argomenti.**
+9.  Verranno visualizzate la frase trigger e la risposta del bot. **Fare clic su Aggiungi ad argomenti.**
     
-10. L'argomento suggerito verrà aggiunto agli argomenti esistenti Selezionare tutti gli argomenti suggeriti e fare clic su **Aggiungi ad argomenti**. 
+10.  L'argomento suggerito verrà aggiunto agli argomenti esistenti Selezionare tutti gli argomenti suggeriti e fare clic su **Aggiungi ad argomenti**. 
 
     > È possibile selezionare tutti gli argomenti con l'icona a sinistra della colonna Nome. Se viene visualizzato un messaggio di errore, riprovare.
 
-11. Dopo aver aggiunto gli argomenti suggeriti selezionare la scheda **Esistenti**. I nuovi argomenti verranno visualizzati con lo stato Disattivato.
+11.  Dopo aver aggiunto gli argomenti suggeriti selezionare la scheda **Esistenti**. I nuovi argomenti verranno visualizzati con lo stato Disattivato.
 
-12. Usare il pulsante interruttore nella colonna **Stato** per impostare alcuni argomenti su **Attivato**. 
+12.  Usare il pulsante interruttore nella colonna **Stato** per impostare alcuni argomenti su **Attivato**. 
 
-13. Prendere nota della frase trigger di uno dei gli argomenti attivati per poterla usare per i test in seguito.
+13.  Prendere nota della frase trigger di uno dei gli argomenti attivati per poterla usare per i test in seguito.
 
 > Non chiudere questa finestra del browser.
 

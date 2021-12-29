@@ -8,11 +8,6 @@ lab:
 
 ## Lab: Come creare un'app canvas, parte 1
 
-### Avviso importante (a partire da novembre 2020):
-Common Data Service è stato rinominato Microsoft Dataverse. Parte della terminologia in Microsoft Dataverse è stata aggiornata. Ad esempio, i riferimenti a termini come entità (ora **tabella**), campo (ora **colonna**) e record (ora **riga**) potrebbero risultare obsoleti. Tenere presente questo aspetto durante l'esecuzione dei lab. I contenuti verranno completamente aggiornati molto presto.
-
-Per altre informazioni e per un elenco completo dei termini interessati, visitare [Che cos'è Microsoft Dataverse?](https://docs.microsoft.com/it-it/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Scenario
 
 Il Bellows College è un'organizzazione didattica con più edifici nel proprio campus. Le visite al campus sono attualmente registrate su documenti cartacei. Le informazioni non vengono acquisite in modo coerente e non esiste un sistema per raccogliere e analizzare i dati sulle visite in tutto il campus. 
@@ -220,7 +215,7 @@ Considerato il numero di visite in continua crescita, gli utenti hanno bisogno d
            TextSearchBox1.Text,
        	"bc_code","bc_name"
        ),
-     "bc_code",
+     "bc_scheduledstart",
      If(SortDescending1, Descending, Ascending)
    )
    ```
@@ -283,7 +278,7 @@ In questo esercizio l'applicazione verrà testata e verrà poi aggiunta alla sol
    
 2. Selezionare **Aggiungi esistente**, quindi fare clic su **App** e infine su **App canvas**.
 
-3. Selezionare la scheda **Esterni alle soluzioni**.
+3. Selezionare la scheda **Outside Dataverse**.
 
 4. Selezionare l'app **Campus Staff** e fare clic su **Aggiungi**.
 

@@ -158,8 +158,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
 
     -   Accedere a <https://make.powerapps.com>
 
-    -   Nell'ambiente Practice fare clic per aprire la soluzione **Campus Management**
-        .
+    -   Nell'ambiente Practice fare clic per aprire la soluzione **Campus Management**.
     
 2.  Creare l'applicazione basata su modello
 
@@ -215,7 +214,7 @@ Vedremo ora come clonare la visualizzazione per creare una nuova visualizzazione
     
     -   Immettere **Settings** per **Titolo** nel riquadro **Proprietà**.
     
-    -   Con l'area **Settings** ancora selezionata fare clic su **Aggiungi**.
+    -   Con il gruppo **Impostazioni** ancora selezionato, fare clic su **Aggiungi**.
     
     -   Selezionare **Area secondaria**.
     

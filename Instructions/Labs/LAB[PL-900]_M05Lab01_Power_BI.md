@@ -98,9 +98,9 @@ Verranno eseguite le procedure seguenti per progettare e creare il dashboard di 
     
 2. Aprire Power BI Desktop e accedere con le proprie credenziali se richiesto.
 
-3. Selezionare **Recupera dati**.
+3. Selezionare **Recupera dati** e quindi selezionare **Altro...**.
 
-4. Selezionare **Power Platform** a sinistra, quindi selezionare **Common Data Service** e fare clic su **Connetti**.
+4. Selezionare **Power Platform** a sinistra, quindi selezionare **Common Data Service (Legacy)** e fare clic su **Connetti**. Se richiesto, accedere con le proprie credenziali e fare clic su **Connetti**.
 
 5. Incollare l'URL dell'ambiente copiato in precedenza nel campo **URL server** e quindi fare clic su **OK**.
 
