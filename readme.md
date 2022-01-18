@@ -1,3 +1,12 @@
+**Important Notice!**
+
+This repo was replaced by a [new repo](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals.it-it) on December 18th 2021. We're making this change to improve the localized version of this content and reduce the delta between English and localized content updates. 
+After a short interval, this repo will be archived.
+
+**Contributions**
+
+At this time, we are not accepting external contributions to this repo. If you have suggestions or spot any errors, please create a pull request or report an issue on the [new repo](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals.it-it).
+
 # PL-900: Concetti fondamentali su Power Platform
 
 - **[Scaricare il manuale per gli studenti e il contenuto AllFiles più recenti](../../releases/latest)**
